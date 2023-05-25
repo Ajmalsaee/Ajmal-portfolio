@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajmal potfolio</title>
+  <meta name="author" content="Ajmal saee">
+  <meta http-equiv="refresh" content="">
+  <meta name="description" content="Ajmal saee  is the Best [Top-Class] I.T expert in Lahore, Karachi & Islamabad.">
+<meta name="keywords" content="">
+<meta property="og:title" content=" Pakistan's No1 IT Expert">
+<meta property="og:site_name" content="Ajmal saee portfolio">
+<meta property="og:url" content="https://www.ajmalsaee.com/">
+<meta property="og:description" content="Ajmal saee is the first choice of students who want to excel themselves in the field of Internet Marketing.">
+<meta property="og:type" content="website">
+  <script src="https://kit.fontawesome.com/2f766e8226.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #080808;
+      color: #fff;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    #header {
+      width: 100%;
+      height: 100vh;
+      background-image: url('aj bg1.avif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+   #header.container{
+    padding: 10px 10%;
+   }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    #header img {
+      width: 140px;
+    }
+
+    nav ul li {
+      display:inline-block;
+      list-style: none;
+      margin: 10px 20px;
+    }
+
+    nav ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav li a::after {
+      content: "";
+      width: 0%;
+      height: 3px;
+      background: rgb(234, 53, 53);
+      position: absolute;
+      left: 0%;
+      bottom: -6px;
+      transition: 0.5s;
+    }
+
+    nav li a:hover::after {
+      width: 100%;
+    }
+
+    .header-text {
+      margin-top: 15%;
+      font-size: 30px;
+      margin-left: 25px;
+    }
+
+    .header-text h1 {
+      margin-top: 20px;
+      font-size: 50px;
+    }
+
+    .header-text h1 span {
+      color: rgb(246, 74, 74);
+    }
+
+    /*------about-------*/
+
+    #about {
+      padding: 60px 0px;
+      color: #ababab;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .about-col-1 {
+      flex-basis: 35%;
+    }
+
+    .about-col-1 img {
+      width: 100%;
+      height: 80vh;
+      border-radius: 15px;
+      /*margin-left: 20px;*/
+      background-color: #262626;
+    }
+
+    .about-col-2 {
+      flex-basis: 60%;
+    }
+
+    .sub-tittle {
+      font-size: 60px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .tab-tittle {
+      display: flex;
+      margin: 20px 0 40px;
+    }
+
+    .tab-links {
+      margin-right: 50px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+
+    }
+
+    .tab-links::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      background: rgb(240, 38, 38);
+      left: 0;
+      bottom: -8px;
+      position: absolute;
+      transition: 0.5s;
+    }
+
+    .tab-links.active-link::after {
+      width: 50%;
+      font-size: 14px;
+    }
+
+    .tab-contents ul li {
+      list-style: none;
+      margin: 10px 0px;
+    }
+
+    .tab-contents ul li span {
+      color: red;
+    }
+
+    .tab-contents {
+      display: none;
+    }
+
+    .tab-contents.active-tab {
+      display: block;
+    }
+
+    /*------services------*/
+    #services {
+      padding: 30px 0px;
+    }
+
+    #services h1 {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      margin: 50px 30px;
+    }
+
+    .services-list div {
+      background-color: #262626;
+      padding: 30px;
+      font-size: 13px;
+      font-weight: 300;
+      border-radius: 10px;
+      transition: background 0.5s, transform 0.5s;
+    }
+
+    .services-list div i {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+
+    .services-list div h2 {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .services-list div a {
+      text-decoration: none;
+      font-size: 12px;
+      margin-top: 20px;
+      color: #fff;
+      display: inline-block;
+    }
+
+    .services-list div:hover {
+      background: rgb(240, 41, 41);
+      transform: translateY(-10px);
+    }
+
+    /*-------portfolio------*/
+    #portfolio {
+      padding: 50px 0px;
+    }
+
+    #portfolio h1 {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .work-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      margin: 50px 30px;
+    }
+
+    .work {
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .work img {
+      border-radius: 10px;
+      width: 100%;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    .layer {
+      width: 100%;
+      height: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(240, 41, 41));
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 40px;
+      text-align: center;
+      transition: height 0.5s;
+    }
+
+    .layer h3 {
+      margin-bottom: 15px;
+    }
+
+    .layer a {
+      text-decoration: none;
+      color: rgb(237, 27, 27);
+      margin-top: 20px;
+      line-height: 60px;
+      font-size: 18px;
+      background-color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 110px;
+    }
+
+    .work:hover img {
+      transform: scale(1.1);
+    }
+
+    .work:hover .layer {
+      height: 100%;
+    }
+
+    .btn {
+      display: block;
+      margin: 50px auto;
+      width: fit-content;
+      border: 1px solid rgb(237, 17, 17);
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      transition: background 0.5s;
+    }
+
+    .btn:hover {
+      background: #ff000d;
+    }
+
+    /*-------contact-------*/
+    .contact-left {
+      flex-basis: 35%;
+      margin-left: 30px;
+    }
+     .contact-left p a {
+      color: #fff;
+      text-decoration: none;
+     }
+     .contact-left p a:hover{
+      color: #ff000d;
+
+     }
+    .contact-right {
+      flex-basis: 60%;
+    }
+
+    .contact-left p {
+      margin-top: 30px;
+    }
+
+    .contact-left p i {
+      color: #ff000d;
+      margin-right: 15px;
+      font-size: 21px;
+    }
+
+    .social-icon {
+      margin: 30px;
+    }
+
+    .social-icon a {
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 30px;
+      color: #fff;
+      display: inline-block;
+    }
+    .social-icon a:hover{
+      color: #ff000d;
+    }
+    .fa-twitter:hover{
+      color: lightskyblue;
+    }
+    .btn.btn2 {
+      display: inline-block;
+    }
+
+    .contact-right form {
+      width: 90%;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      outline: none;
+      border: 0;
+      background: #262626;
+      padding: 15px;
+      margin: 15px 0px;
+      font-size: 15px;
+      color: #fff;
+      border-radius: 6px;
+      border: 1px solid #fff;
+    }
+
+    form .btn2 {
+      background-color: #262626;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 14px 60px;
+      margin-top: 20px;
+    }
+
+    .copyright {
+      width: 100%;
+      padding: 20px 0px;
+      background-color: #262626;
+      font-weight: 300;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /*---------media Query----------*/
+
+    nav .fas {
+    
+      display: none;
+
+    }
+
+    @media only screen and (max-width:600px) {
+      #header {
+        background: url('photo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #header p{
+        font-size: 18px;
+        color: floralwhite;
+      }
+      .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+      }
+
+      .header-text h1 {
+        font-size: 30px;
+        color: white;
+      }
+      .header-text h1 span {
+      color: red;
+    }
+      nav .fas{
+        padding: 20px 30px;
+        display: block;
+        font-size: 24px;
+        padding-right: 20px;
+      }
+      nav ul{
+        background-color: #666;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+       /* height: 100vh;*/
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 25px;
+      }
+      nav ul .fas{
+        position: absolute;
+        top: 14px;
+        left: -5px;
+        cursor: pointer;
+      }
+      .sub-tittle{
+        font-size: 40px;
+      }
+      .about-col-1 img {
+    width: 100%;
+    height: 46vh;
+    border-radius: 15px;
+    /* margin-left: 20px; */
+    background-color: #262626;
+      }
+      #about {
+    padding: 22px 0px;
+    color: #ababab;
+      }
+      .about-col-1, .about-col-2{
+        flex-basis: 100%;
+       border-radius: 15px;
+       /*margin-left: 17px;*/
+       /*margin: 10px;*/
+       padding: 20px;
+      }
+      .about-col-2{
+        font-size: 14px;
+      }
+      .about-col-2{
+        font-size: 14px;
+      }
+      .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+      }
+      portfolio {
+    padding: 0px 0px;
+     }
+      .contact-left, .contact-right{
+         flex-basis: 100%;
+      }
+      .contact-right{
+         margin: 30px;
+
+      }
+      .copyright{
+        font-size: 14px
+      }
+    }
+    #msg{
+      color: #61b752;
+      margin: -40px;
+      display: block;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+  <div class="container">
+   <nav>
+    <img src="aj01.gif" class="logo">
+    <ul id="sidemenu">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <i class="fas fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fas fa-bars" onclick="openmenu()"></i>
+   </nav>
+   <div class="header-text">
+    <p>Web Developer</p>
+    <h1>HI I'm <span>Ajmal Saee</span> <br>From Pakistan</h1>
+   </div>
+  </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Ajmal pic.png" alt="pic">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-tittle">About Me</h1>
+          <p>My name Ajmal Saee I skilled web developer with a passion for creating
+           dynamic and interactive websites. I am well-versed in a variety of
+           programming languages, including HTML, CSS, JavaScript,Node.js and
+           MongoDB, and has experience working with popular web
+           development frameworks such as React.</p>
+          <div class="tab-tittle">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('eduaction')">Eduaction</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Developer</span><br>Web Development</li>
+              <li><span>UI&UX</span><br>Designing Web Interface</li>
+              <li><span>Logo Design</span><br>Web&App</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2 years Experence in web-development</span><br>Create Many projects </li>
+              <li><span>Like Some </span><br>Fast Food Website<br>Dance Accedemy & lots of more</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="eduaction">
+            <ul>
+              <li><span>2020-2022</span><br>MCS from University Of Okara<br>CGPA : 3.45 </li>
+              <li><span>2018-2020 </span><br>ADP-CS University Of Central Punjab<br>CGPA : 3.23</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------services------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-tittle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code fa-fade"></i>
+          <h2>Web Developer</h2>
+          <p>As a web developer, i responsible for creating and maintaining websites, web applications, and other digital platforms. My skills and expertise may include programming languages such as HTML, CSS, and JavaScript,Node.js,MongoDB. I am also be knowledgeable in database management, user experience design.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store fa-fade"></i>
+          <h2>App Developer</h2>
+          <p>As an app developer, you are responsible for designing, building, and maintaining applications for mobile devices such as smartphones and tablets.Also my work as an app developer plays a critical role in shaping the way users interact with mobile devices and in driving the growth of the mobile app market.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop fa-fade"></i>
+          <h2>UI&UX Designer</h2>
+          <p>As a UI and UX designer,i am responsible for creating intuitive and visually appealing user interfaces for digital products such as websites, mobile apps, and software applications. My skills and expertise may include user research, information architecture, wireframing, prototyping, and graphic design. You may also be knowledgeable in coding languages such as HTML, CSS,,JavaScript and Data base.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------portfolio-->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-tittle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="dfc1.jpg" alt="photo">
+          <div class="layer">
+            <h3>DFC</h3>
+            <p>I design a fast food web site. These websites include menus, nutritional information, locations, and hours of operation.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="dance.avif" alt="photo">
+          <div class="layer">
+            <h3>Dance</h3>
+            <p>I design a Dance Accedemy website in which user see cources,timing of opening,closing and contact to Accedemy Teacher.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="shop1.png" alt="photo">
+          <div class="layer">
+            <h3>E-commerce</h3>
+            <p>I design a also E-commerce Web in which User see product place order review order and conform order etc.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn"> See More</a>
+    </div>
+  </div>
+  <!---------contact-------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-tittle">Contact Me</h1>
+          <p><a class="gmail" href="http://ajmalsaee435@gmail.com"><i class="fa-sharp fa-solid fa-paper-plane"></i>ajmalsaee435@gmail.com</a></p>
+          <p><a href=""><i class="fa-solid fa-phone"></i>03091765680</a></p>
+          <div class="social-icon">
+            <a href="https://www.youtube.com/@Codeworld1"><i class="fa-brands fa-youtube fa-beat-fade"></i></a>
+            <a href="https://twitter.com/AjmalSaee1?t=I7_I-QEtZ9otOQODuKNC8Q&s=09"><i class="fa-brands fa-twitter fa-beat-fade"></i></a>
+            <a href="https://instagram.com/ajmal_saee?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram fa-beat-fade"></i></a>
+            <a href="https://github.com/Ajmalsaee"><i class="fa-brands fa-github fa-beat-fade"></i></a>
+          </div>
+          <a href="CV - Ajmal saee.pdf" Download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="your name" required>
+            <input type="text" name="Email" placeholder="Enter Email" required>
+            <textarea name="Message" rows="6" placeholder="Write message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Ajmal. 2023</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    let sidemenu = document.getElementById("sidemenu");
+    function openmenu(params) {
+      sidemenu.style.right = "0";
+    }
+    function closemenu(params) {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <form name="submit-to-google-sheet">
+   <!------- <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>--->
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRn-FNSz20rtn2bCoEFjcDfTeJlqIVlL1LrwkYzNmKKR1PragXgBGJSIZ_dYxAO0NqxA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Massage Send Successfully"
+          innerHTML = (function(){
+          msg.innerHTML =""
+          },2000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
